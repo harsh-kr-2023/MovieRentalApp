@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Customers]
+(
+	CustomerId UNIQUEIDENTIFIER DEFAULT NEWID() PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100),
+    Phone NVARCHAR(20) NOT NULL,
+    Address NVARCHAR(200)
+);
